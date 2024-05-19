@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "c2d17fb4-f8a7-456b-a5df-5cd2299afc7a",
+		"name": "CEO era",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18346383",
+		"_collection_link": "https://interstellar-eclipse-313411.postman.co/workspace/MMA~b76ebb3e-659a-4350-949c-c32d9b071cae/collection/18346383-c2d17fb4-f8a7-456b-a5df-5cd2299afc7a?action=share&source=collection_link&creator=18346383"
+	},
+	"item": [
+		{
+			"name": "authuntication",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register?name=andrew&email=andrewrasfat931ss@gmail.com&password=andrewrafat91@gmail&PhoneNumber=+201284753413&UserName=dodo&password_confirmation=andrewrafat91@gmail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "andrew"
+								},
+								{
+									"key": "email",
+									"value": "andrewrasfat931ss@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "andrewrafat91@gmail"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "+201284753413"
+								},
+								{
+									"key": "UserName",
+									"value": "dodo"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "andrewrafat91@gmail"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login?password=andrewrafat91@gmail&PhoneNumber=+201284753413",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "andrew",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "andrewrasfat931ss@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "andrewrafat91@gmail"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "+201284753413"
+								},
+								{
+									"key": "UserName",
+									"value": "dodo",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "andrewrafat91@gmail",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDYwNDI5LCJleHAiOjE3MTYwNjQwMjksIm5iZiI6MTcxNjA2MDQyOSwianRpIjoiR0hkNmtINkR2MXpJOGNBaSIsInN1YiI6IjMxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.cff6KCtFOdJC6wwueIYsYaXRjI2DtDR8b9lpy-Roa_g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "posts create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzE2MDc2ODcxLCJleHAiOjE3MTYwODA0NzEsIm5iZiI6MTcxNjA3Njg3MSwianRpIjoiRnhOeDhuWmFud2ZXbWloMCIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.toanrojwYLs48ZQmD8ndalmNsuGZcTL4tEtKRf7nlLw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/post/create?title=515aaaaaaaaaaaaaaaaaaaaaaaa&description=556sdasda&contact_phone=65454",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"post",
+								"create"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "515aaaaaaaaaaaaaaaaaaaaaaaa"
+								},
+								{
+									"key": "description",
+									"value": "556sdasda"
+								},
+								{
+									"key": "contact_phone",
+									"value": "65454"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "posts view",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
