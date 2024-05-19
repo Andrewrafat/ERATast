@@ -1,0 +1,11 @@
+.fa{
+    cursor: pointer;
+}
+.fa-trash{
+    color: red;
+}
+
+#dashboard-ecommerce > .row >.col-lg-3.col-sm-6.col-12{
+    cursor: pointer;
+
+}

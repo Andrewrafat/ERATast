@@ -1,0 +1,17 @@
+@font-face
+{
+    font-family:kufiFont;
+    src:url("Cairo-Regular.ttf");
+}
+body,p,a,li,ul,div,h1,h2,h3,h4,h5,h6,span,label{
+    font-family: "kufiFont" !important;
+    
+}
+/*================= welcome blade ================*/
+html, body {
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
