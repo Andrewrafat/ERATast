@@ -1,0 +1,17 @@
+run database
+php artisan migrate
+
+
+
+for run seeder 
+php artisan db:seed --class=UsersSeeder     
+php artisan db:seed --class=PostFactory
+
+
+test api :
+test for auth cyle: php artisan test --filter PostsControllerTest
+test for posts: php artisan test --filter AuthControllerTest 
+
+for get dailly report:
+php artisan daily:report
+
