@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+run database
+php artisan migrate
+
+
+
+for run seeder 
+php artisan db:seed --class=UsersSeeder     
+php artisan db:seed --class=PostFactory
+
+
+test api :
+test for auth cyle: php artisan test --filter PostsControllerTest
+test for posts: php artisan test --filter AuthControllerTest 
+
+for get dailly report:
+php artisan daily:report
+
